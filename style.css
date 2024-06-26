@@ -1,0 +1,103 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+    --blue-fb: hsl(225,47%,37%);
+    --blue-in: hsl(200,100%,36%);
+    --red-google: hsl(0,73%,53%);
+    --orange: hsl(11, 80%, 60%);
+    --grey: hsl(11,2%,59%);
+    --grey-light: hsl(11,2%,93%);
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 62.5%;
+}
+
+h1 { 
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+a {
+    font-size: 1.1rem;
+    padding-top: 1.5rem;
+    text-decoration: none;
+}
+
+.container {
+    align-items: center;
+    background-color: var(--grey-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    height: 100vh;
+    width: 100%;
+}
+
+.container__header {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0 2rem 0;
+}
+
+.firstBox {
+    background-color: #FFFFFF;
+    max-width: 30rem;
+    width: 100%;
+}
+
+.firstBox__buttons {
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+}
+
+.firstBox__authData,
+.firstBox__loginButton {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.firstBox__authData-format {
+    background-color: var(--grey-light);
+    border: .2rem solid var(--grey-light);
+    font-weight: 500;
+    padding: .6rem;
+    width: 80%;
+}
+
+.firstBox__authData p {
+    font-size: 1rem;
+}
+
+.format {
+    font-style: italic;
+}
+
+.firstBox__loginButton {
+    padding-bottom: 3rem;
+}
+
+.firstBox__loginButton button {
+    background-color: var(--orange);
+    border: .2rem solid var(--orange);
+    border-radius: 4rem;
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    width: 60%;
+}
