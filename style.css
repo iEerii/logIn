@@ -5,9 +5,9 @@
 }
 
 :root {
-    --blue-fb: hsl(225,47%,37%);
-    --blue-in: hsl(200,100%,36%);
-    --red-google: hsl(0,73%,53%);
+    --fb-color: hsl(225,47%,37%);
+    --linkedin-color: hsl(200,100%,36%);
+    --discord-color: hsl(235, 64%, 65%);
     --orange: hsl(11, 80%, 60%);
     --grey: hsl(11,2%,59%);
     --grey-light: hsl(11,2%,93%);
@@ -61,27 +61,46 @@ a {
 }
 
 .firstBox__buttons button {
-    border: none;
-    border-radius: 5rem;
+    background-color: #FFFFFF;
+    border: .1rem solid var(--grey-light);
+    border-radius: 50%;
     cursor: pointer;
+    height: 3.5rem;
+    transition: all .3s ease;
+    width: 3.5rem;
+}
+
+/* tamanho svg */
+.firstBox__buttons button svg {
+    width: 1.5rem; 
+}
+
+.firstBox__buttons button:hover svg {
+    color: #FFFFFF;
+}
+
+.fb-icon{
+    color: var(--fb-color);
 }
 
 .fb-icon:hover{
-    background-color: var(--blue-fb);
+    background-color: var(--fb-color);
 }
 
-.google-icon:hover {
-    background-color: var(--red-google);
+.discord-icon {
+    color: var(--discord-color);
+}
+
+.discord-icon:hover {
+    background-color: var(--discord-color);
+}
+
+.linkedin-icon {
+    color: var(--linkedin-color);
 }
 
 .linkedin-icon:hover {
-    background-color: var(--blue-in);
-}
-
-image,
-svg {
-    border-radius: 5rem;
-    width: 3rem;
+    background-color: var(--linkedin-color);
 }
 
 .firstBox__authData,

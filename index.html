@@ -16,32 +16,27 @@
                     <h1 class="format">Iniciar Sesión</h1>
                 </header>
                 <div class="firstBox__buttons">
-                    <button class="firstBox__buttons-icon fb-icon" id="fbIcon">
-                        <svg width="48" height="48" fill="currentColor">
-                            <image href="assets/images/facebook.svg"/>
-                        </svg>    
+                    <button class="firstBox__buttons-icon fb-icon" id="fbButton" type="button" value="facebook" data-redirect="facebook">
+                        <svg fill="currentColor" id="fi_3128304" enable-background="new 0 0 100 100" height="48" viewBox="0 0 100 100" width="48" xmlns="http://www.w3.org/2000/svg"><g id="_x30_1._Facebook"><path id="Icon_11_" d="m40.437 55.166c-.314 0-6.901.002-9.939-.001-1.564-.001-2.122-.563-2.122-2.137-.002-4.043-.003-8.086 0-12.129.001-1.554.591-2.147 2.135-2.148 3.038-.002 9.589-.001 9.926-.001 0-.277-.001-6.114 0-8.802.002-3.974.711-7.778 2.73-11.261 2.067-3.565 5.075-6.007 8.93-7.419 2.469-.905 5.032-1.266 7.652-1.268 3.278-.002 6.556.001 9.835.007 1.409.002 2.034.625 2.037 2.044.006 3.803.006 7.606 0 11.408-.002 1.434-.601 2.01-2.042 2.026-2.687.029-5.376.011-8.06.119-2.711 0-4.137 1.324-4.137 4.13-.065 2.968-.027 5.939-.027 9.015.254 0 7.969-.001 11.575 0 1.638 0 2.198.563 2.198 2.21 0 4.021-.001 8.043-.004 12.064-.001 1.623-.527 2.141-2.175 2.142-3.606.002-11.291.001-11.627.001v32.545c0 1.735-.546 2.288-2.258 2.288-4.174 0-8.349.001-12.523 0-1.513 0-2.103-.588-2.103-2.101-.001-10.599-.001-32.36-.001-32.732z"></path></g></svg>
                     </button>
-                    <button class="firstBox__buttons-icon google-icon" id="googleIcon">
-                        <svg width="48" height="48" fill="currentColor">
-                            <image href="assets/images/google-mas.svg"/>
-                        </svg>  
+                    <button class="firstBox__buttons-icon discord-icon" id="discordButton" type="button" value="discord" data-redirect="discord">
+                        <svg fill="currentColor" id="fi_5968756" enable-background="new 0 0 512 512" height="48" viewBox="0 0 512 512" width="48" xmlns="http://www.w3.org/2000/svg"><g><path d="m433.43 93.222c-32.633-14.973-67.627-26.005-104.216-32.324-.666-.122-1.332.183-1.675.792-4.501 8.005-9.486 18.447-12.977 26.655-39.353-5.892-78.505-5.892-117.051 0-3.492-8.39-8.658-18.65-13.179-26.655-.343-.589-1.009-.894-1.675-.792-36.568 6.298-71.562 17.33-104.216 32.324-.283.122-.525.325-.686.589-66.376 99.165-84.56 195.893-75.64 291.421.04.467.303.914.666 1.199 43.793 32.161 86.215 51.685 127.848 64.627.666.203 1.372-.04 1.796-.589 9.848-13.449 18.627-27.63 26.154-42.543.444-.873.02-1.91-.888-2.255-13.925-5.282-27.184-11.723-39.939-19.036-1.009-.589-1.09-2.032-.161-2.723 2.684-2.011 5.369-4.104 7.932-6.217.464-.386 1.11-.467 1.655-.224 83.792 38.257 174.507 38.257 257.31 0 .545-.264 1.191-.182 1.675.203 2.564 2.113 5.248 4.226 7.952 6.237.928.691.867 2.134-.141 2.723-12.755 7.456-26.014 13.754-39.959 19.016-.908.345-1.312 1.402-.867 2.275 7.689 14.892 16.468 29.073 26.134 42.523.404.569 1.13.813 1.796.609 41.835-12.941 84.257-32.466 128.05-64.627.384-.284.626-.711.666-1.178 10.676-110.441-17.881-206.376-75.7-291.421-.14-.284-.382-.487-.664-.609zm-262.336 233.843c-25.227 0-46.014-23.16-46.014-51.604 0-28.443 20.383-51.604 46.014-51.604 25.831 0 46.417 23.364 46.013 51.604 0 28.444-20.384 51.604-46.013 51.604zm170.127 0c-25.226 0-46.013-23.16-46.013-51.604 0-28.443 20.383-51.604 46.013-51.604 25.832 0 46.417 23.364 46.014 51.604 0 28.444-20.181 51.604-46.014 51.604z"></path></g></svg>
                     </button>
-                    <button class="firstBox__buttons-icon linkedin-icon" id="linkedinIcon">
-                        <svg width="48" height="48" fill="currentColor">
-                            <image href="assets/images/linkedin.svg" />
-                        </svg>  
+                    <button class="firstBox__buttons-icon linkedin-icon" id="linkedinButton" type="button" value="linkedin" data-redirect="linkedin">
+                        <svg fill="currentColor" height="48" viewBox="0 -11 512 511" width="48" xmlns="http://www.w3.org/2000/svg" id="fi_1384062"><g><path d="m6.488281 159.683594h109.753907v330.207031h-109.753907zm0 0"></path><path d="m62.089844.5c-37.542969 0-62.089844 24.652344-62.089844 57.054688 0 31.6875 23.816406 57.042968 60.648438 57.042968h.714843c38.277344 0 62.097657-25.355468 62.097657-57.042968-.714844-32.402344-23.820313-57.054688-61.371094-57.054688zm0 0"></path><path d="m385.644531 151.933594c-58.234375 0-84.328125 32.003906-98.914062 54.507812v-46.757812h-109.757813v330.207031h109.753906v-184.402344c0-9.871093.714844-19.726562 3.613282-26.785156 7.933594-19.714844 25.992187-40.136719 56.3125-40.136719 39.714844 0 55.601562 30.28125 55.601562 74.671875v176.652344h109.746094v-189.335937c0-101.425782-54.148438-148.621094-126.355469-148.621094zm0 0"></path></g></svg>
                     </button>
                 </div>
                 <div class="firstBox__authData">
                     <p class="format">o usa tu email</p>
-                    <input class="firstBox__authData-format" type="text" id="userName" placeholder="User name">
-                    <input class="firstBox__authData-format" type="password" id="password" placeholder="Password">
+                    <input class="firstBox__authData-format" name="userName" type="text" id="userName" placeholder="User name">
+                    <input class="firstBox__authData-format" name="password" type="password" id="password" placeholder="Password">
                 </div>
                 <div class="firstBox__loginButton">
                     <a href="#" class="format">¿Olvidaste tu contraseña?</a>
-                    <button>Iniciar Sesión</button>
+                    <button id="logIn">Iniciar Sesión</button>
                 </div>
             </section>
         </main>
+        <script src="index.js"></script>
     </body>
 </html>
