@@ -5,9 +5,9 @@
 }
 
 :root {
-    --blue-fb: hsl(225,47%,37%);
-    --blue-in: hsl(200,100%,36%);
-    --red-google: hsl(0,73%,53%);
+    --fb-color: hsl(225,47%,37%);
+    --linkedin-color: hsl(200,100%,36%);
+    --discord-color: hsl(235, 64%, 65%);
     --orange: hsl(11, 80%, 60%);
     --grey: hsl(11,2%,59%);
     --grey-light: hsl(11,2%,93%);
@@ -60,6 +60,49 @@ a {
     padding-bottom: 1.5rem;
 }
 
+.firstBox__buttons button {
+    background-color: #FFFFFF;
+    border: .1rem solid var(--grey-light);
+    border-radius: 50%;
+    cursor: pointer;
+    height: 3.5rem;
+    transition: all .3s ease;
+    width: 3.5rem;
+}
+
+/* tamanho svg */
+.firstBox__buttons button svg {
+    width: 1.5rem; 
+}
+
+.firstBox__buttons button:hover svg {
+    color: #FFFFFF;
+}
+
+.fb-icon{
+    color: var(--fb-color);
+}
+
+.fb-icon:hover{
+    background-color: var(--fb-color);
+}
+
+.discord-icon {
+    color: var(--discord-color);
+}
+
+.discord-icon:hover {
+    background-color: var(--discord-color);
+}
+
+.linkedin-icon {
+    color: var(--linkedin-color);
+}
+
+.linkedin-icon:hover {
+    background-color: var(--linkedin-color);
+}
+
 .firstBox__authData,
 .firstBox__loginButton {
     align-items: center;
@@ -94,6 +137,7 @@ a {
     border: .2rem solid var(--orange);
     border-radius: 4rem;
     color: #FFFFFF;
+    cursor: pointer;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     letter-spacing: .1rem;
